@@ -7,11 +7,11 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-  routes:
-    -id: movie-service
-    uri: lb://movie-service
-    predicates:
-    -Path=/movies/**
+      routes:
+        -id: movie-service
+        uri: lb://movie-service
+        predicates:
+        -Path=/movies/**
 eureka:
   client:
     fetchRegistry: true
