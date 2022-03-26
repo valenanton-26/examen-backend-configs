@@ -1,5 +1,5 @@
 server:
-  port : 8097
+  port: 8065
 spring:
   jpa:
     hibernate:
@@ -15,4 +15,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
