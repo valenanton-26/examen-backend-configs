@@ -8,10 +8,10 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        -id: movie-service
-        uri: lb://movie-service
+        -id: movies-catalog-service
+        uri: lb://movies-catalog-service
         predicates:
-        -Path=/movies/**
+        -Path=/catalog/**
 eureka:
   client:
     fetchRegistry: true
