@@ -1,5 +1,5 @@
 server:
-  port: 8065
+  port: 8098
 spring:
   jpa:
     hibernate:
@@ -7,7 +7,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
-    show-sql: false
+    show-sql: true
   datasource:
     url: jdbc:mysql://localhost:3306/movies
     username: root
