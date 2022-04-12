@@ -11,7 +11,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/movies
     username: root
-    password: root
+    password: valen2000
 eureka:
   client:
     service-url:
