@@ -12,6 +12,11 @@ spring:
         uri: lb://movies-catalog-service
         predicates:
         -Path=/catalog/**
+       routes:
+        -id: series-catalog-service
+        uri: lb://series-catalog-service
+        predicates:
+        -Path=/catalog/**
 eureka:
   client:
     fetchRegistry: true
