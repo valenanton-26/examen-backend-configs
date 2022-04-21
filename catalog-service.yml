@@ -12,6 +12,9 @@ spring:
     url: jdbc:mysql://localhost:3306/movies
     username: root
     password: valen2000
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/examen-final-backend
 eureka:
   client:
     service-url:
