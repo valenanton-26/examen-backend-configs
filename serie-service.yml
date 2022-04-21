@@ -4,6 +4,9 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/examen-final-backend
 eureka:
   client:
     fetchRegistry: false
