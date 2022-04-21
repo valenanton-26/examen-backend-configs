@@ -16,7 +16,7 @@ spring:
 
 queue:
   movie:
-    name: movieQueue
+    name: serieQueue
 eureka:
   client:
     fetchRegistry: false
