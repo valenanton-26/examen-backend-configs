@@ -1,5 +1,9 @@
 server:
   port : 8097
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/examen-final-backend
 eureka:
   client:
     fetchRegistry: false
