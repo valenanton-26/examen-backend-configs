@@ -17,7 +17,7 @@ spring:
         uri: lb://series-catalog-service
         predicates:
         -Path=/catalog/**
-zipkin:
+  zipkin:
     base-url: http://localhost:9411/
     enabled: true
 eureka:
