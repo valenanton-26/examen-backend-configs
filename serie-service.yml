@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://serie-mongodb:27017/examen-final-backend
+      uri: mongodb://mongo-service-db:27017/examen-final-backend
   zipkin:
     base-url: http://zipkin:9411/
     enabled: true
