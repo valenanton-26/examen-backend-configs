@@ -9,17 +9,17 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
   datasource:
-    url: jdbc:mysql://localhost:3306/movies
+    url: jdbc:mysql://movie-sqldb:3306/movies
     username: root
     password: valen2000
   zipkin:
-    base-url: http://localhost:9411/
+    base-url: http://zipkin:9411/
     enabled: true
 
   rabbitmq:
     username: guest
     password: guest
-    host: localhost
+    host: rabbitmq3
     
 
 queue:
@@ -30,6 +30,6 @@ eureka:
     fetchRegistry: false
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-server:8761/eureka
   instance:
     preferIpAddress: true
